@@ -1,0 +1,15 @@
+$primary-color: purple;
+
+body {
+  font-family: "Arial, sans-serif";
+}
+
+h1 {
+  color: $primary-color;
+}
+
+
+footer {
+  border: 1px solid blue;
+  width: "100%";
+}
