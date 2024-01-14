@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2dvh;
+  width: "100%";
+
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    width: 80dvh;
+
+    .search-bar-input {
+      width: 50dvh;
+    }
+  }
+
+  .icons {
+    display: flex;
+    width: 15dvh;
+    justify-content: space-around;
+  }
+}

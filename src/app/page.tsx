@@ -1,10 +1,11 @@
+import NavBar from "./components/NavBar";
 import "./styles/main.scss";
 
 export default function Home() {
   return (
     <body>
       <header>
-        <h1>Home</h1>
+        <NavBar/>
       </header>
       <main></main>
       <footer></footer>
