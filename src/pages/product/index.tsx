@@ -1,4 +1,4 @@
-import ProductItem from "@/app/components/product";
+import ProductItem from "@/app/components/Product";
 
 export default function Product() {
   return (

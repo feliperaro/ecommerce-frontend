@@ -4,14 +4,13 @@ import React from "react";
 import Menu from "../Menu";
 import SearchIcon from "../icons/search";
 import HeartIcon from "../icons/heart";
-import "./styles/index.scss";
 
 const NavBar = () => {
   const [searchedText, setSearchedText] = React.useState<string>("");
   const formatedSearchText = searchedText.split(" ").join("-");
 
   return (
-    <div className="navbar">
+    <div className="flex ">
       <Menu />
       <div className="search-bar">
         <input
@@ -25,7 +24,7 @@ const NavBar = () => {
       </div>
       <div className="icons">
         <a href={`search/${formatedSearchText}`}>
-          <SearchIcon height={20} width={20} />
+          <SearchIcon />
         </a>
         <a href="my-favorites">
           <HeartIcon height={20} width={20} />

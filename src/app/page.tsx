@@ -1,13 +1,13 @@
-import NavBar from "./components/NavBar";
-import "./styles/main.scss";
+import Header from "./components/Header";
+import ShoppingCart from "./components/ShoppingCart";
 
 export default function Home() {
   return (
     <body>
-      <header>
-        <NavBar/>
-      </header>
-      <main></main>
+      <Header />
+      <main>
+        <ShoppingCart />
+      </main>
       <footer></footer>
     </body>
   );

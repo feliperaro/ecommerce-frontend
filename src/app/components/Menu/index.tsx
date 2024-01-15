@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import "./styles/index.scss";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
