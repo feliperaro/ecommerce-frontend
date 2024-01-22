@@ -29,28 +29,28 @@ export default function Header() {
           </a>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Products
+          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+            {"Home"}
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+          <a href="/products" className="text-sm font-semibold leading-6 text-gray-900">
+            {"Products"}
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+          <a href="/about-us" className="text-sm font-semibold leading-6 text-gray-900">
+            {"About us"}
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-5">
           <a
-            href="/login"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Login
-          </a>
-          <a
             href="/sign-in"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            Sign in
+            {"Login"}
+          </a>
+          <a
+            href="/sign-up"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            {"Sign up"}
           </a>
         </div>
       </nav>
@@ -79,36 +79,36 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Products
+                  {"Home"}
                 </a>
                 <a
-                  href="#"
+                  href="/products"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  {"Products"}
                 </a>
                 <a
-                  href="#"
+                  href="/about-us"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  {"About us"}
                 </a>
               </div>
               <div className="py-6">
                 <a
-                  href="/login"
+                  href="/sign-up"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Login
+                  {"Create your account"}
                 </a>
                 <a
                   href="/sign-in"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Sign-in
+                  Login
                 </a>
               </div>
             </div>
