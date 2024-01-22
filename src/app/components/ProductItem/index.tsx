@@ -20,7 +20,7 @@ function ProductItem(props: Props) {
             width={350}
           />
         </div>
-        <div className="p-5 justify-center text-start">
+        <div className="p-5 justify-center text-center">
           <h4 className="font-bold">{product.title}</h4>
           <p className="font-light">{product.description}</p>
           <h4 className="mt-1 mb-3 font-semibold">R${product.price}</h4>
