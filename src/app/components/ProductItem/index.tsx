@@ -4,26 +4,28 @@ import React, { MouseEventHandler } from "react";
 
 interface Props {
   product: Product;
-  onClick?: MouseEventHandler | undefined;
+  href: string;
 }
 
 function ProductItem(props: Props) {
-  const { product } = props;
+  const { product, href } = props;
   return (
-    <div
-      className="h-auto w-auto border flex flex-col"
-      onClick={props.onClick}
-    >
-      <div className="flex align-middle">
-        <Image
-          alt={`image ${product.name}`}
-          src={product.imgSrc}
-          height={200}
-          width={200}
-        />
-      </div>
-      <div className="p-5 justify-center">{product.name}</div>
-      <div>{`R$ ${product.price}`}</div>
+    <div className="mb-5 h-auto w-auto flex flex-col justify-center items-center ">
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        <div className="h-auto">
+          <Image
+            alt={`image ${product.thumbAlt}`}
+            src={product.thumbSrc}
+            height={350}
+            width={350}
+          />
+        </div>
+        <div className="p-5 justify-center text-start">
+          <h4 className="font-bold">{product.title}</h4>
+          <p className="font-light">{product.description}</p>
+          <h4 className="mt-1 mb-3 font-semibold">R${product.price}</h4>
+        </div>
+      </a>
     </div>
   );
 }

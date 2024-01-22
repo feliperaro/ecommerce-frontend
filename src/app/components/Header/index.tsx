@@ -30,7 +30,7 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+            Products
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Marketplace
@@ -82,7 +82,7 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Products
                 </a>
                 <a
                   href="#"
@@ -102,13 +102,13 @@ export default function Header() {
                   href="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Login
                 </a>
                 <a
                   href="/sign-in"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Sign in
+                  Sign-in
                 </a>
               </div>
             </div>

@@ -10,15 +10,19 @@ import Footer from "./components/Footer";
 const products: Array<Product> = [
   {
     id: 1,
-    name: "Camisa",
+    title: "Camisa",
+    description: "camisa description",
     price: 100,
-    imgSrc: image,
+    thumbSrc: image,
+    thumbAlt: "ALt image",
   },
   {
     id: 2,
-    name: "Camiseta Confortável",
+    title: "Camiseta Confortável",
+    description: "camisa description",
     price: 50,
-    imgSrc: image,
+    thumbSrc: image,
+    thumbAlt: "ALt image",
   },
 ];
 
@@ -27,14 +31,15 @@ export default function Home() {
     <body>
       <Header />
       <main>
-        <div className="flex gap-10">
-          {products.map((product) => {
+        <div className="mt-5">
+          {products.map((product, index) => {
             return (
-              <ProductItem
-                key={product.id}
-                product={product}
-                onClick={() => alert("click!")}
-              />
+              <div key={index} className="border rounded-lg mb-3">
+                <ProductItem
+                  product={product}
+                  href={"#"}
+                />
+              </div>
             );
           })}
         </div>
