@@ -1,10 +1,14 @@
-import { StaticImageData } from "next/image";
+import { Image } from "./image";
 
 export interface Product {
-  id: number;
+  id: number | string;
+  color: string,
+  colors: Array<string>;
   title: string;
-  description: string;
   price: number | string;
-  thumbSrc: StaticImageData;
-  thumbAlt: string;
+  description: string;
+  thumb_alt: string;
+  thumb_src: string;
+  images: Array<Image>;
+  stock: boolean;
 }
